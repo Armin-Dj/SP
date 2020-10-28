@@ -1,4 +1,3 @@
-public interface Element{
+interface Element {
     public void print();
-
 }
