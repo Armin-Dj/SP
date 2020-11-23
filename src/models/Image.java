@@ -1,3 +1,4 @@
+package models;
 import java.util.concurrent.TimeUnit;
 import java.lang.System.*;
 
@@ -13,6 +14,10 @@ public class Image implements Element{
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+    }
+    public void accept(Visitor visitor)
+    {
+        visitor.visit(this);
     }
     public void print()
     {

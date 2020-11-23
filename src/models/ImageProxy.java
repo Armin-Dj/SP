@@ -1,3 +1,4 @@
+package models;
 import java.awt.*;
 
 public class ImageProxy implements Element{
@@ -14,6 +15,10 @@ public class ImageProxy implements Element{
             realImage = new Image(url);
         }
         return realImage;
+    }
+
+    public void accept(Visitor visitor){
+        visitor.visit(this);
     }
 
     public void print(){

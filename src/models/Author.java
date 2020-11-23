@@ -1,3 +1,4 @@
+package lab7.models;
 public class Author {
     private String name;
 
